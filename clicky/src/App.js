@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 // import Card from "./components/geez/geezNums";
-import Wrapper from "./components/Wrapper";
+// import Wrapper from "./components/Wrapper";
 // import json from "../images/"
-import Header from "./components/header"
-import Navbar from "./components/navbar"
-import Footer from "./components/footer"
+import Header from "./components/header";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
+import Cards from "./components/geez";
+
 
 class App extends Component {
 //   setState for the cards
@@ -15,12 +17,7 @@ class App extends Component {
 
             </Navbar>
             <Header />
-            <Wrapper>
-                
-                
-
-                
-            </Wrapper>
+            <Cards />
             <Footer />
         </div>
     );
