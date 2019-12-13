@@ -10,18 +10,18 @@ import Cards from "./components/geez";
 
 class App extends Component {
 //   setState for the cards
-  render() {
-    return (
-        <div>
-            <Navbar>
+    render() {
+        return (
+            <div>
+                <Navbar>
 
-            </Navbar>
-            <Header />
-            <Cards />
-            <Footer />
-        </div>
-    );
-  }
+                </Navbar>
+                <Header />
+                <Cards />
+                <Footer />
+            </div>
+        );
+    }
 }
 
 export default App;

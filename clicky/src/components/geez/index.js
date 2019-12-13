@@ -1,8 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import "./style.css";
 
 
-class App extends Component {
+class App extends React.Component {
+    state={
+        image:""
+    }
     // console.log(props);
     render() {
         return(
@@ -15,7 +18,8 @@ class App extends Component {
                 <div className="col s12 m7">
                     <div className="card">
                         <div className="card-image">
-                            <img src="images/sample-1.jpg"/>
+                            {/* replace with this.state.image */}
+                            <img alt={this.state.name} src={this.state.image}/>
                         </div>  
                     </div>
                 </div>

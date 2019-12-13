@@ -1,5 +1,5 @@
 import React from "react";
-import header from "./components/navbar";
+import header from "../components/navbar";
 
 // By extending the React.Component class, Counter inherits functionality from it
 class Counter extends React.Component {
@@ -18,15 +18,15 @@ class Counter extends React.Component {
   // The render method returns the JSX that should be rendered
   render() {
     return (
-      <div className="card text-center">
+      <div className="score">
         {/* <div className="card-header bg-primary text-white">
           score: 
         </div> */}
-        <div className="card-body">
-          <p className="card-text">Score: {this.state.count}</p>
+        <div className="score-body">
+          <p className="score-text">Score: {this.state.count}</p>
           {/* make the tag a materialize card not a button */}
-          <button className="btn btn-primary" onClick={this.handleIncrement}>
-          </button>{" "}
+          {/* if unique card clicked, onClick= {this.handleIncrement} if same card, reset score({this.state.count} = 0) and save score if it's the highest  */}
+          
         </div>
       </div>
     );
