@@ -1,4 +1,5 @@
 import React from "react";
+import header from "./components/navbar";
 
 // By extending the React.Component class, Counter inherits functionality from it
 class Counter extends React.Component {
@@ -18,9 +19,9 @@ class Counter extends React.Component {
   render() {
     return (
       <div className="card text-center">
-        <div className="card-header bg-primary text-white">
-          Click Counter!
-        </div>
+        {/* <div className="card-header bg-primary text-white">
+          score: 
+        </div> */}
         <div className="card-body">
           <p className="card-text">Score: {this.state.count}</p>
           {/* make the tag a materialize card not a button */}

@@ -1,28 +1,28 @@
 import React, { Component } from "react";
-import Card from "./components/geez";
+// import Card from "./components/geez/geezNums";
 import Wrapper from "./components/Wrapper";
 // import json from "../images/"
-
+import Header from "./components/header"
+import Navbar from "./components/navbar"
+import Footer from "./components/footer"
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
-  state = {
-    geez
-  };
-
-  // Map over this.state.friends and render a FriendCard component for each friend object
+//   setState for the cards
   render() {
     return (
-      <Wrapper>
-        {this.state.geez.map(card => (
-          <Card
-            id={card.id}
-            key={card.id}
-            name={card.name}
-            image={card.image}
-          />
-        ))}
-      </Wrapper>
+        <div>
+            <Navbar>
+
+            </Navbar>
+            <Header />
+            <Wrapper>
+                
+                
+
+                
+            </Wrapper>
+            <Footer />
+        </div>
     );
   }
 }
