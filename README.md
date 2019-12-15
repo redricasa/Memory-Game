@@ -9,13 +9,21 @@
 This application builds on Facebook's React starter node package installed by running `npx create-react-app`
 Run `npm install` to install all the dependencies saved in package.json.
 Run `npm start` and your game will start in `localhost:3000`
+> Make sure you're in the React app directory before running `npm start` or you'll be wasting a lot of time or worse- lose some work! 
 
 ## Technologies Used
 - create-react-app
 - React
-- Axios
 - Node
-
+- underscore js
+- npm modules:
+    - underscore*
+    - Axios*
+    - react-dom
+    - react-scripts
+    - 
+ `*- not yet used`
 ## Next Steps
-- Improve the CSS
+- Improve the CSS by using media queries and animate.css to make the in/correct answers more engaging 
+- use Axios to get the geezNums.json as an API
 

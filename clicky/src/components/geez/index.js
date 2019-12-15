@@ -18,7 +18,7 @@ class Geez extends React.Component {
                     <div className="card">
                         <div className="card-image">
                             {/* gets name & image from props */}
-                            <img alt={this.props.name} src={this.props.image}/>  
+                            <img alt={this.props.name} src={this.props.image} onClick={this.props.onClick}/>  
                         </div>  
                         <div class="card-content">
                             <p><strong>{this.props.label}</strong></p>
