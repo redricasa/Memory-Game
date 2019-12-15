@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./style.css";
 
 
-class App extends Component {
+class Footer extends Component {
     render() {
         return (
             <footer class="page-footer">
@@ -21,4 +21,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default Footer;

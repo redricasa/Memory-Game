@@ -5,19 +5,49 @@ import React, { Component } from "react";
 import Header from "./components/header";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
-import Cards from "./components/geez";
+import Geez from "./components/geez";
+import json from "./geezNums.json";
+import axios from "axios";
+import shuffle from 'underscore';
 
 
 class App extends Component {
-//   setState for the cards
+    state={
+        cardNums
+    }
+
+    componentDidMount(){
+        this.setState({cards: Cards})
+
+        // axios.get(
+
+        // )
+        //     .then(result=> 
+        //         console.log(`Here's the geezNums.json API data: ${result.data}`))
+        //     .catch( err =>
+        //         console.log(`Error Message: ${err}`)
+        //     )
+    }
+
+//   setState for the geez
     render() {
+        const Cards = [];
+        // loops through the geezNums.json
+        for(let index=0;index< json.length ;index++){
+            Cards
+            .push(<Geez image={json[index].image} name={json[index].name} label={json[index].label} />)
+        }
         return (
+
             <div>
                 <Navbar>
 
                 </Navbar>
                 <Header />
-                <Cards />
+                
+                <main>
+                    {Cards}
+                </main>
                 <Footer />
             </div>
         );

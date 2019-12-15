@@ -1,10 +1,10 @@
 import React from "react";
 import "./style.css";
+// import "./geezNums.json"
 
-
-class App extends React.Component {
+class Geez extends React.Component {
     state={
-        image:""
+        // image:""
     }
     // console.log(props);
     render() {
@@ -14,19 +14,21 @@ class App extends React.Component {
             //         <img alt={props.name} src={props.image} />
             //     </div>
             // </div>
-            <div className="row">
-                <div className="col s12 m7">
+           
                     <div className="card">
                         <div className="card-image">
-                            {/* replace with this.state.image */}
-                            <img alt={this.state.name} src={this.state.image}/>
+                            {/* gets name & image from props */}
+                            <img alt={this.props.name} src={this.props.image}/>  
                         </div>  
+                        <div class="card-content">
+                            <p><strong>{this.props.label}</strong></p>
+                        </div>
                     </div>
-                </div>
-            </div>
+           
         )
     }
+
 }
  
 
-export default App;
+export default Geez;

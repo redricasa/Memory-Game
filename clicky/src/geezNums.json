@@ -3,92 +3,110 @@
     {
         "id":1,
         "name": "ge'ez number one",
-        "image": "../images/1.png"
+        "image": "../images/1.png",
+        "label": 1
     },
     {
         "id":2,
         "name": "ge'ez number two",
-        "image": "../images/2.png"
+        "image": "../images/2.png",
+        "label": 2
     },
     {
         "id":3,
         "name": "ge'ez number three",
-        "image": "../images/3.png"
+        "image": "../images/3.png",
+        "label": 3
     },
     {
         "id":4,
         "name": "ge'ez number four",
-        "image": "../images/4.png"
+        "image": "../images/4.png",
+        "label": 4
     },
     {
         "id":5,
         "name": "ge'ez number five",
-        "image": "../images/5.png"
+        "image": "../images/5.png",
+        "label": 5
     },
     {
         "id":6,
         "name": "ge'ez number six",
-        "image": "../images/6.png"
+        "image": "../images/6.png",
+        "label": 6
     },
     {
         "id":7,
         "name": "ge'ez number seven",
-        "image": "../images/7.png"
+        "image": "../images/7.png",
+        "label": 7
     },
     {
         "id":8,
         "name": "ge'ez number eight",
-        "image": "../images/8.png"
+        "image": "../images/8.png",
+        "label": 8
     },
     {
         "id":9,
         "name": "ge'ez number nine",
-        "image": "../images/9.png"
+        "image": "../images/9.png",
+        "label": 9
     },
     {
         "id":10,
         "name": "ge'ez number ten",
-        "image": "../images/10.png"
+        "image": "../images/10.png",
+        "label": 10
     },
     {
         "id":11,
         "name": "ge'ez number twenty",
-        "image": "../images/20.png"
+        "image": "../images/20.png",
+        "label": 20
     },
     {
         "id":12,
         "name": "ge'ez number thirty",
-        "image": "../images/30.png"
+        "image": "../images/30.png",
+        "label": 30
     },
     {
         "id":13,
         "name": "ge'ez number forty",
-        "image": "../images/40.png"
+        "image": "../images/40.png",
+        "label": 40
     },
     {
         "id":14,
         "name": "ge'ez number fifty",
-        "image": "../images/50.png"
+        "image": "../images/50.png",
+        "label": 50
     },
     {
         "id":15,
         "name": "ge'ez number sixty",
-        "image": "../images/60.png"
+        "image": "../images/60.png",
+        "label": 60
     },
     {
         "id":16,
         "name": "ge'ez number seventy",
-        "image": "../images/70.png"
+        "image": "../images/70.png",
+        "label": 70
     },
     {
         "id":17,
         "name": "ge'ez number eighty",
-        "image": "../images/80.png"
+        "image": "../images/80.png",
+        "label": 80
     },
     {
         "id":18,
         "name": "ge'ez number ninty",
-        "image": "../images/90.png"
+        "image": "../images/90.png",
+        "label": 90
     }
 
 ]

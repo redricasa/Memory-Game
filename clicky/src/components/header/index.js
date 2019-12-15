@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./style.css";
 
-class App extends Component {
+class Header extends Component {
     // renders jumbotron
     render() {
         return (
@@ -15,4 +15,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default Header;
