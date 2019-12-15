@@ -25,5 +25,6 @@ Run `npm start` and your game will start in `localhost:3000`
  `*- not yet used`
 ## Next Steps
 - Improve the CSS by using media queries and animate.css to make the in/correct answers more engaging 
+- Change the images to be crisper (and add the lables)
 - use Axios to get the geezNums.json as an API
 

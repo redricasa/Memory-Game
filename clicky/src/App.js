@@ -4,8 +4,6 @@ import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Geez from "./components/geez";
 import json from "./geezNums.json";
-import axios from "axios";
-import Counter from './components/counter/counter';
 import _ from 'underscore';
 
 
@@ -29,17 +27,7 @@ class App extends Component {
     }
 
     componentDidMount(){
-        
-        // this.setState({cards: Cards})
-
-        // axios.get(
-
-        // )
-        //     .then(result=> 
-        //         console.log(`Here's the geezNums.json API data: ${result.data}`))
-        //     .catch( err =>
-        //         console.log(`Error Message: ${err}`)
-        //     )
+   
     }
 
     
@@ -58,20 +46,21 @@ class App extends Component {
 
         return (
 
-            <div>
-
+            <React.Fragment>
                 <Navbar>
 
                 </Navbar>
                 <Header />
-                <div>
-                    <p>the score is {this.state.count}</p>
-                </div>
+                    <div>
+                        <p>the score is {this.state.count}</p>
+                    </div>
+                
+                
                 <main className="container">
                     {Cards}
                 </main>
                 <Footer />
-            </div>
+            </React.Fragment>
         );
     }
 }
