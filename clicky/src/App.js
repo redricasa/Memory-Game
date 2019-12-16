@@ -30,7 +30,6 @@ class App extends Component {
    
     }
 
-    
 //  setState for the geez
     render() {
         var Cards = [];
@@ -42,18 +41,18 @@ class App extends Component {
         // TODO using underscore.js for the shuffle functionality to shuffle the cards everytime on of them gets clicked
         Cards = _.shuffle(Cards)
         
-
-
         return (
 
             <React.Fragment>
                 <Navbar>
-
+                <div>
+                    <p>the score is {this.state.count}</p>
+                </div>
                 </Navbar>
                 <Header />
-                    <div>
-                        <p>the score is {this.state.count}</p>
-                    </div>
+                {/* <div>
+                    <p>the score is {this.state.count}</p>
+                </div> */}
                 
                 
                 <main className="container">

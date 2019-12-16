@@ -1,8 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import "./style.css";
 
-class Nav extends Component {
-    render() {
+function Nav(props) {
+    // console.log(props.children.props.children.props.children[1])
+    // render() {
         return (
             <div>
                 <nav className= "navbar">
@@ -15,12 +16,13 @@ class Nav extends Component {
                         </li>
                         <li>
                             {/* score will be displayed here */}
+                            <p>the score is {props.children.props.children.props.children[1]}</p>
                         </li>
                     </ul>
                 </nav>
             </div>
         )
-    }
+    // }
 }
 
 export default Nav;
