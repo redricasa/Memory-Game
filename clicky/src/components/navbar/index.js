@@ -2,7 +2,10 @@ import React from "react";
 import "./style.css";
 
 function Nav(props) {
+    console.log(props)
     var score = (props.children.props.children.props.children[1])
+
+    // var topScore = 
     //TODO - function that establishes the top score
     // topScore(){
         // var topScore = 
@@ -12,7 +15,6 @@ function Nav(props) {
     // clicked(){
 
     // }
-
     return (
         <div className="navbar-fixed">
             <nav className= "navbar">

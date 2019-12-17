@@ -10,6 +10,7 @@ import _ from 'underscore';
 class App extends Component {
     state = {
         count: 0
+        // TODO topScore: 0
     };
 
     constructor(props) {
@@ -36,7 +37,7 @@ class App extends Component {
         // loops through the geezNums.json
         for(let index=0;index< json.length ;index++){
             Cards
-            .push(<Geez image={json[index].image} name={json[index].name} label={json[index].label} onClick={this.handleIncrement} />)
+            .push(<Geez image={json[index].image} name={json[index].name} label={json[index].label} onClick={this.handleIncrement} key={json[index].id}/>)
         }
         // TODO using underscore.js for the shuffle functionality to shuffle the cards everytime on of them gets clicked
         Cards = _.shuffle(Cards)
@@ -53,8 +54,7 @@ class App extends Component {
                 {/* <div>
                     <p>the score is {this.state.count}</p>
                 </div> */}
-                
-                
+        
                 <main className="container">
                     {Cards}
                 </main>

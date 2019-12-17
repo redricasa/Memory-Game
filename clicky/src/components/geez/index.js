@@ -3,6 +3,7 @@ import "./style.css";
 
 // function creates
 function Geez(props) {
+    console.log("Geez compponent:"+ JSON.stringify(props))
     return(
         <div className="card">
             <div className="card-image">
