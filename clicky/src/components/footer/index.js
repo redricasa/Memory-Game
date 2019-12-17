@@ -5,14 +5,14 @@ import "./style.css";
 class Footer extends Component {
     render() {
         return (
-            <footer class="page-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col l6 s12"></div>
+            <footer className="page-footer">
+                <div className="container">
+                    <div className="row">
+                        <div className="col l6 s12"></div>
                     </div>
                 </div>
-                <div class="footer-copyright">
-                    <div class="container">
+                <div className="footer-copyright">
+                    <div className="container">
                         © 2019 Copyright Frederica Blissett
                     </div>
                 </div>

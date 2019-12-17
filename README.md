@@ -17,11 +17,11 @@ Run `npm start` and your game will start in `localhost:3000`
 - Node
 - underscore js
 - npm modules:
-    - underscore*
-    - Axios*
+    - underscore
+    - Axios`*`
     - react-dom
     - react-scripts
-    - 
+    - gh-pages
  `*- not yet used`
 ## Next Steps
 - Improve the CSS by using media queries and animate.css to make the in/correct answers more engaging 

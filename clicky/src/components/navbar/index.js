@@ -2,27 +2,36 @@ import React from "react";
 import "./style.css";
 
 function Nav(props) {
-    // console.log(props.children.props.children.props.children[1])
-    // render() {
-        return (
-            <div>
-                <nav className= "navbar">
-                    <ul>
-                        <li className= "brand">
-                            <a href="/" > Memory Game </a>
-                        </li>
-                        <li>
-                            {/* status updates will be displayed here */}
-                        </li>
-                        <li>
-                            {/* score will be displayed here */}
-                            <p>the score is {props.children.props.children.props.children[1]}</p>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        )
+    var score = (props.children.props.children.props.children[1])
+    //TODO - function that establishes the top score
+    // topScore(){
+        // var topScore = 
     // }
+    
+    // TODO - function to determine if card clicked in current game
+    // clicked(){
+
+    // }
+
+    return (
+        <div className="navbar-fixed">
+            <nav className= "navbar">
+                <ul>
+                    <li className= "brand">
+                        <a href="/" > Memory Game </a>
+                    </li>
+                    <li>
+                        {/* status updates will be displayed here */}
+
+                    </li>
+                    <li>
+                        {/* score will be displayed here */}
+                        <p>Score: {score} | Top Score: </p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    )
 }
 
 export default Nav;
