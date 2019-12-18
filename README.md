@@ -24,7 +24,7 @@ Run `npm start` and your game will start in `localhost:3000`
     - gh-pages
  `*- not yet used`
 ## Next Steps
-- Improve the CSS by using media queries and animate.css to make the in/correct answers more engaging 
+- Improve the CSS by using media queries and animate.css to make the in/correct answers more engaging. have the score be a badge so that it stands out. 
 - Change the images to be crisper (and add the lables)
 - use Axios to get the geezNums.json as an API
 
