@@ -3,9 +3,9 @@ import "./style.css";
 
 function Nav(props) {
     console.log("Navbar props: ", props)
-    var score = (props.children.props.children.props.children[1])
-    var topScore = (props.children.props.children.props.children[5])
-    var message = (props.children.props.children.props.children[3])
+    var score = (props.score)
+    var topScore = (props.topScore)
+    var message = (props.message)
     console.log("score: ", score)
     console.log("message: ", message  )
     console.log("top score: ",  topScore)

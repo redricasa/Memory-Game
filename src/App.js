@@ -30,18 +30,19 @@ class App extends Component {
             message: "Oops!! Game Over"
           });
         }; 
+        var count= this.state.count + 1;
         if (!this.state.clickedArray.includes(event)) {
           this.setState({
             clickedArray: this.state.clickedArray.concat([event]),
-            count: this.state.count + 1,
+            count: count,
             message: "YAY!!"
           });
         };
         console.log("clicked ID",event)
         console.log("props id: ")
         // set topscore = score if score>topscore.
-        if (this.state.count > this.state.topScore) {
-          this.setState({ topScore: this.state.count });
+        if (count >= this.state.topScore) {
+          this.setState({ topScore: count });
         }
     }
 
@@ -71,19 +72,14 @@ class App extends Component {
         return (
             
             <React.Fragment>
-                <Navbar>
-                {/* this sets the props object for count so that the navbar component gets props. (any) word is needed as well or there won't be a number! */}
+                <Navbar
                 
-                <div>
-                    <ul>
-                        score={this.state.count}
-                        message={this.state.message}
-                        topScore={this.state.topScore}
-                        
-                    </ul>
-                </div>
-                
-                </Navbar>
+                    score={this.state.count}
+                    message={this.state.message}
+                    topScore={this.state.topScore}
+                />
+               
+              
                 <Header />  
                 {/* the main tag keeps the images together and formats it in a way where they maintain their proportions */}
                 <main className="container">
