@@ -24,26 +24,25 @@ class App extends Component {
     // connects to the onclick property of the image
     handleClick =(event)=> {
         if (this.state.clickedArray.includes(event)) {
-        this.setState({
-            count: 0,
-            clickedArray: [],
-            message: "Oops!! Game Over"
-          });
-        }; 
-        var count= this.state.count + 1;
-        if (!this.state.clickedArray.includes(event)) {
-          this.setState({
-            clickedArray: this.state.clickedArray.concat([event]),
-            count: count,
-            message: "YAY!!"
-          });
-        };
-        console.log("clicked ID",event)
-        console.log("props id: ")
-        // set topscore = score if score>topscore.
-        if (count >= this.state.topScore) {
-          this.setState({ topScore: count });
-        }
+            this.setState({
+                count: 0,
+                clickedArray: [],
+                message: "Oops!! Game Over"
+            });
+        }else {
+            var count= this.state.count + 1;
+            this.setState({
+                clickedArray: this.state.clickedArray.concat([event]),
+                count: count,
+                message: "YAY!!"
+            });
+            console.log("clicked ID", event)
+            console.log("props id: ")
+            // set topscore = score if score>topscore.
+            if (count >= this.state.topScore) {
+                this.setState({ topScore: count });
+            }
+        }        
     }
 
    
