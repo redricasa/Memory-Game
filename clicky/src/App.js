@@ -12,53 +12,41 @@ class App extends Component {
         count: 0,
         topScore: 0,
         clickedArray: [],
-        message: "click on a Ge'ez number to start!"
+        message: "click on a Ge'ez number to start!",
+        
     };
-    
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {count: 0};
-    
-    //     // This binding is necessary to make `this` work in the callback
-    //     this.handleIncrement = this.handleIncrement.bind(this);
-    // }
-    // --------------------
-    //function that resets game by setting score=0 
-    // newGame(){
-    //     this.setState({count: 0})
-    // }
-    // =====================
-    // handleIncrement() {
-    //     // We always use the setState method to update a component's state
-    //     this.setState({ count: this.state.count + 1 });
-    //     // alert(this.state.count)
-    // }
-
-    clickPicture = clickedId => {
-        
-        
-        // if clicked an image already clicked set this.state.score = 0; empty clickeadArray, end of if block
-        if (this.state.clickedArray.includes(clickedId)) {
-          this.setState({
+    // used to instantiate an object of a class- this allows you to get props of this
+    constructor(props) {
+        super(props);
+        // This binding is necessary to make `this` work in the callback
+        this.handleClick = this.handleClick.bind(this);
+    };
+    // connects to the onclick property of the image
+    handleClick =(event)=> {
+        if (this.state.clickedArray.includes(event)) {
+        this.setState({
             count: 0,
             clickedArray: [],
             message: "Oops!! Game Over"
           });
-        } else {
+        }; 
+        if (!this.state.clickedArray.includes(event)) {
           this.setState({
-            clickedArray: this.state.clickedArray.concat([clickedId]),
+            clickedArray: this.state.clickedArray.concat([event]),
             count: this.state.count + 1,
             message: "YAY!!"
           });
         };
-        console.log("clicked ID",clickedId)
+        console.log("clicked ID",event)
+        console.log("props id: ")
         // set topscore = score if score>topscore.
         if (this.state.count > this.state.topScore) {
           this.setState({ topScore: this.state.count });
         }
-    };
-    
-//  setState for the geez
+    }
+
+   
+    //  setState for the geez
     render() {
         
         var Cards = [];
@@ -66,12 +54,13 @@ class App extends Component {
         for(let index=0;index< json.length ;index++){
             Cards
             .push(
+                // calls the geez function in geez/index.js
                 <Geez 
                     image={json[index].image} 
                     name={json[index].name} 
                     label={json[index].label} 
-                    // TODO map out onclick function in console
-                    onClick={this.clickPicture} 
+                    onClick={this.handleClick} 
+                    id={json[index].id}
                     key={json[index].id}
                 />
             )
@@ -103,7 +92,6 @@ class App extends Component {
                 <Footer />
             </React.Fragment>
         );
-        
     }
 }
 

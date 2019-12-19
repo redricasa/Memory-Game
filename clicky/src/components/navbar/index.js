@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 
 function Nav(props) {
-    console.log("props: ", props)
+    console.log("Navbar props: ", props)
     var score = (props.children.props.children.props.children[1])
     var topScore = (props.children.props.children.props.children[5])
     var message = (props.children.props.children.props.children[3])
@@ -33,4 +33,3 @@ function Nav(props) {
 }
 
 export default Nav;
- 
